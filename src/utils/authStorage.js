@@ -1,8 +1,8 @@
-const SESSION_KEY = 'gaming-demo-session'
+const SESSION_KEY = 'auth-todo-session'
 
 export const getSession = () => {
   try {
-    return JSON.parse(localStorage.getItem(SESSION_KEY))
+    return JSON.parse(localStorage.getItem(SESSION_KEY) || localStorage.getItem('gaming-demo-session'))
   } catch {
     return null
   }

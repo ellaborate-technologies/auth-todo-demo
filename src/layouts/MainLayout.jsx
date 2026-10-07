@@ -19,7 +19,7 @@ const MainLayout = ({ children }) => {
         <nav>
           <Link to='/tasks'>Tasks</Link>
           {' | '}
-          <span>User: {user?.username || 'Player'}</span>
+          <span>User: {user?.username || 'User'}</span>
           {' | '}
           <button type='button' onClick={handleLogout}>
             Logout

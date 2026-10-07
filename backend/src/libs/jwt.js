@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken'
 
-const JWT_SECRET = process.env.JWT_SECRET || 'super-secure-jwt-secret-gaming-demo-2026'
+const JWT_SECRET = process.env.JWT_SECRET || 'super-secure-jwt-secret-auth-todo-2026'
 
 export const generateToken = (payload) => {
   return jwt.sign(payload, JWT_SECRET, { expiresIn: '7d' })
